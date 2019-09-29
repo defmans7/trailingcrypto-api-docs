@@ -42,6 +42,7 @@ Each Protected Endpoint should have these header values in API calls:
 }
 ```
 **Possible Values:**
+
 provider: `email`, `google`, `facebook`
 
 type: `TRIAL:1, FREE:2, PAID:3, TELEGRAM_ADMIN:4, BUSINESS:5`
@@ -69,3 +70,56 @@ referred: Count of users signed-up using current user referral link
     "status": true
 }
 ```
+<br/><br/>
+
+## Trading Endpoints
+
+### Create a new trade or order
+
+    POST /api/trade/order
+
+ 
+ **Parameters:**
+ 
+|Key |Value  | Description|
+|--|--|--|
+|exchange  | binance |Exchange on which order needs to be placed|
+|type|MARKET_SELL|Type of Trades 
+|orders| Order Matrix in JSON String| Order matrix contains all info regarding order or a group of orders in series or parrell. *(Examples given below)*
+
+**Response:**
+```Javascript
+{  
+"success":true,  
+"msg":{  
+	"_id":"5d908dc78045eb20c0ec46ab",  
+	"updatedAt":"2019-09-29T10:56:07.543Z",  
+	"createdAt":"2019-09-29T10:56:07.476Z",  
+	"coin":"BNB/BTC",  
+	"exchange":"binance",  
+	"status":"CLOSE",  
+	"stop_price":null,  
+	"relative_stop_price":null,  
+	"max_price":0.0019041,  
+	"min_price":0.0019041,  
+	"stop_delay":0,  
+	"bot_multiplier":null,  
+	"order_volume":10,  
+	"auto_volume":false,  
+	"base_quantity":0.01905605,  
+	"public_id":"dae507bc-7d3a-4506-bae1-7c61348cdf98",  
+	"entry_price":0.0019037,  
+	"user":"5ca3612fbee94d24588d6624",  
+	"type":"MARKET_SELL",  
+	"comment":"Order Placed",    
+	"close_price":0.0019041,  
+	"live":false,  
+	"repeat":0,  
+	"retry_count":0,  
+	"bot_attempt":0  
+	}  
+}
+```
+<br/><br/>
+
+TODO: Order Matrix Explanation
