@@ -13,6 +13,7 @@
 }
 ```
 
+</br></br>
 ## Authentication
 All API endpoints are Authenticated using `Bearer token Authorization`.
 Each Protected Endpoint should have these header values in API calls:
@@ -23,6 +24,7 @@ Each Protected Endpoint should have these header values in API calls:
 | x-requested-with | XMLHttpRequest | This is to always receive response in JSON|
 |Content-Type|application/x-www-form-urlencoded|In Post requests where you need to submit form data|
 
+</br></br>
 
 ## User Profile Endpoints
 ### Get Profile Info
