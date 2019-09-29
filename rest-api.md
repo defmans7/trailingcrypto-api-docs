@@ -43,8 +43,11 @@ Each Protected Endpoint should have these header values in API calls:
 ```
 **Possible Values:**
 provider: `email`, `google`, `facebook`
+
 type: `TRIAL:1, FREE:2, PAID:3, TELEGRAM_ADMIN:4, BUSINESS:5`
+
 referred: Count of users signed-up using current user referral link
+
 
 ### Configure Exchange API Keys
 
