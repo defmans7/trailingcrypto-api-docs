@@ -17,6 +17,9 @@
 ## Authentication
 All API endpoints are Authenticated using `Bearer token Authorization`.
 Each Protected Endpoint should have these header values in API calls:
+ [Click here](https://swagger.io/docs/specification/authentication/bearer-authentication/) for more info about this Authorization mechanism
+
+A user can obtain their apikey by opening this endpoint in their browser once logged-in https://www/trailingcrypto.com/api/user/profile
 
 |KEY  | VALUE |DESCRIPTION |
 | ------------- |:-------------:| -----:|
