@@ -21,6 +21,7 @@ All API endpoints are Authenticated using `Bearer token Authorization`.
 An existing user can obtain their apikey by opening this endpoint in their browser once logged-in https://www/trailingcrypto.com/api/user/profile
 
 Each Protected Endpoint should have these header values in API calls:
+
 |KEY  | VALUE |DESCRIPTION |
 | ------------- |:-------------:| -----:|
 |Authorization|Bearer `07cbefr5...`| Api Key to authenticate the requests|
